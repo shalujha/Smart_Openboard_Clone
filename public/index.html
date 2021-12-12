@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Openboard clone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="toolbox-icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="toolbox-items scale-animation">
+            <img class="pencil" src="Icons/Pencil.svg">
+            <img class="eraser" src="Icons/Eraser.svg">
+            <img class="download" src="Icons/Download.svg">
+            <img class="upload" src="Icons/Upload.svg" alt="upload">
+            <img class="stickyNote" src="Icons/StickyNote.svg">
+            <img class="undo" src="Icons/Undo.svg">
+            <img class="redo" src="Icons/Redo.svg">
+        </div>
+
+        <div class="pencil-toolbox">
+                <input type="range" min=2 max=10 value="3" class="pencil-thickness-adjust">
+            <div class="color-adjust">
+                <div class="black color"></div>
+                <div class="red color"></div>
+                <div class="blue color"></div>
+            </div>
+        </div>
+
+        <div class="eraser-toolbox">
+                <input type="range" min=2 max=10 value="3" class="eraser-thickness-adjust">
+        </div>
+        
+        <!-- <div class="sticky-note">
+            <div class="header">
+                <div class="minimize"></div>
+                <div class="delete"></div>
+            </div>
+            
+                <textarea class="textbox" ></textarea>
+        </div> -->
+        <canvas></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js" integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            const socket=io.connect("http://localhost:3000");
+        </script>
+        <script src="https://thibaultjanbeyer.github.io/dragNdrop/dNd.min.js"></script>
+        <script src="index.js"></script>
+        <script src="canvas.js"></script>
+    </body>
+</html>
