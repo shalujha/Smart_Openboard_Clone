@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shalujha/Openboard-Clone.git"
+  },
+  "engines": {
+    "node":"16.6.1",
+    "npm":"7.24.1"
   },
   "bugs": {
     "url": "https://github.com/shalujha/Openboard-Clone/issues"

@@ -3,6 +3,7 @@
     <head>
         <title>Openboard clone</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" integrity="sha512-Mo79lrQ4UecW8OCcRUZzf0ntfMNgpOFR46Acj2ZtWO8vKhBvD79VCp3VOKSzk6TovLg5evL3Xi3u475Q/jMu4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="Icons/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -43,7 +44,7 @@
         <canvas></canvas>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js" integrity="sha512-nYuHvSAhY5lFZ4ixSViOwsEKFvlxHMU2NHts1ILuJgOS6ptUmAGt/0i5czIgMOahKZ6JN84YFDA+mCdky7dD8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-            const socket=io.connect("http://localhost:3000");
+            const socket=io.connect("https://my-smart-openboard.herokuapp.com/");
         </script>
         <script src="https://thibaultjanbeyer.github.io/dragNdrop/dNd.min.js"></script>
         <script src="index.js"></script>
