@@ -1,0 +1,4 @@
+# Smart_Openboard_Clone
+
+This is basically a smart openboard clone which usually has its applications in presenting things to large number of audience.it has a lot of functionalities like pencil through which we can write on whiteboard and change its width too according to our requirements. it has eraser having width adjustment feature. we can download whatever we have writen on board and upload images too. it has ticky note feature which we can drag to any point on board. the sticky note itself has minimise and delete feature. undo and redo features have also been added.This is called smart it provides real time data transfer i.e if we perform something on one white board and another user connected to this url will be able to see that changes. for more clarity, I have attached a video and images too.
+https://my-smart-openboard.herokuapp.com/
